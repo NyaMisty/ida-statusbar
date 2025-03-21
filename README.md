@@ -8,7 +8,7 @@
 
 1. Install this package using pip: `pip3 install ida-statusbar`
 2. Show a simple text on IDA's status bar:
-```
+```python
 import ida_statusbar
 # The text is identified by tag "my-plugin"
 ida_statusbar.getStatusBar().showText("my-plugin", "The First Text!")
@@ -18,7 +18,7 @@ ida_statusbar.getStatusBar().showText("my-plugin", "The Next Text!")
 ida_statusbar.getStatusBar().removeText("my-plugin", "The Next Text!")
 ```
 3. You can also show a text using a func (for example to show animation):
-```
+```python
 import ida_statusbar
 def textIterFunc(text):
     i = 0
@@ -30,7 +30,7 @@ textIter = textIterFunc("Hello World")
 ida_statusbar.getStatusBar().showTextByFunc("my-plugin", lambda: next(textIter))
 ```
 4. You can also add your own custom QWidget
-```
+```python
 import ida_statusbar
 widget = CustomWidget()
 ida_statusbar.getStatusBar().addWidget(widget)
