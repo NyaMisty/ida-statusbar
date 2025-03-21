@@ -1,6 +1,10 @@
 # ida-statusbar
 
-Usage:
+## Example
+
+![showTextByFunc](resources/showTextByFunc.gif)
+
+## Usage
 
 1. Install this package using pip: `pip3 install ida-statusbar`
 2. Show a simple text on IDA's status bar:
